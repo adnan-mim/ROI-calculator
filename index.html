@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="slidersWrapper">
+      <div>
+        <input
+          type="range"
+          min="2"
+          step="1"
+          max="10"
+          value="2"
+          class="slider"
+          id="fte"
+        />
+        <span
+          ><div id="selected-fte"></div>
+          FTEs in Process</span
+        >
+      </div>
+
+      <div>
+        <input
+          type="range"
+          min="30000"
+          max="300000"
+          step="5000"
+          value="30"
+          class="slider"
+          id="amount"
+        />
+        <span
+          >$
+          <div id="selected-amount"></div>
+          (USD) per FTE</span
+        >
+      </div>
+
+      <div class="resultWrapper">
+        <p>ROI:<span id="roi">1649</span>%</p>
+
+        <p>PAYBACK:<span id="payback">1</span>months</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
